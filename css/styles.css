@@ -1,0 +1,356 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --hero-background: #2e2f42;
+  --light: #f4f4fd;
+  --white-background: #ffffff;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --avctive: #404bbf;
+  --accent: #e7e9fc;
+  --modal-overlay: #2e2f42;
+  --modal-background: #fcfcfc;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--white-background);
+  color: var(--text);
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.header {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #e7e9fc;
+}
+.content-body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+}
+.hero-box {
+  flex-direction: column;
+}
+.benefits-box {
+  flex-direction: column;
+}
+.users-box {
+  flex-direction: column;
+}
+.content {
+  padding: 96px 0 120px 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.adress {
+  font-style: normal;
+}
+.adress-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.title-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+}
+.text-list {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+.titles {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+/* Header */
+
+.header-list {
+  display: flex;
+  padding: 0;
+  width: calc((1128+3 * 24) / 7);
+  margin-right: 332px;
+}
+
+.first-logo {
+    align-items: center;
+    margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--primary-brand);
+}
+.second-logo {
+  color: var(--dark);
+}
+.link-list {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--dark);
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.adress {
+  margin-left: auto;
+}
+.adress-list {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+.nav-item :hover,
+.nav-item :focus {
+  color: var(--avctive);
+}
+
+.adress-list-item :hover,
+.adress-list-item :focus {
+  color: var(--avctive);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Hero */
+.hero-title {
+  text-align: center;
+}
+
+.hero {
+  padding: 188px 0;
+  background-color: var(--hero-background);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  max-width: 496px;
+}
+.btn-hero {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  cursor: pointer;
+  margin-top: 48px;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 0;
+  min-width: 169px;
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: var(--avctive);
+}
+/* Advances */
+.advances-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.advances-title-item {
+  margin-bottom: 8px;
+}
+.advances-list-item {
+  width: 264px;
+}
+
+/* benefits */
+.benefits {
+  padding-top: 0;
+}
+.benefits-title {
+  margin-bottom: 72px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* Users */
+
+.users {
+  background: var(--light);
+}
+.users-item {
+  background: var(--white-background);
+}
+.users-item:not(:last-child) {
+  margin-right: 24px;
+}
+.users-item {
+  flex-direction: column;
+  border-radius: 0px 0px 4px 4px;
+}
+.users-content-box {
+  padding: 32px 16px;
+  text-align: center;
+  width: 232px;
+}
+
+.users-title-item {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.users-title {
+  margin-bottom: 72px;
+}
+
+/* Footer */
+.footer-first-logo {
+    color: var(--primary-brand);
+    margin-bottom: 16px;
+    display: inline-block;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-second-logo {
+  color: var(--light);
+}
+.footer {
+  background: var(--hero-background);
+  padding: 100px 0;
+}
+.footer-text {
+  color: var(--light);
+  max-width: 264px;
+}
+/* button content */
+.content-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  background: var(--light);
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+}
+.content-button:hover,
+.content-button:focus {
+  color: var(--white-background);
+  background: var(--avctive);
+  border: 1px solid transparent;
+}
+.content-button-list {
+  margin-bottom: 72px;
+}
+.footer-box {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-button-item {
+  flex-direction: raw;
+}
+.content-button-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.content-list {
+  flex-wrap: wrap;
+}
+.content-item {
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.content-item:nth-child(3n) {
+  margin-right: 0;
+}
+.content-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.content-link {
+  margin-bottom: 32px;
+}
+.content-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.content-title {
+  margin-bottom: 8px;
+}
