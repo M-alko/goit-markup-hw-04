@@ -186,8 +186,14 @@ body {
 }
 
 .hero {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
-  background-color: var(--hero-background);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/bg-img.jpg");
+ background-repeat: no-repeat;
+ background-color:rgba(0, 0, 0, 0.25);
+ background-size:cover;
 }
 .hero-title {
   font-size: 56px;
