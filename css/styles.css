@@ -374,6 +374,7 @@ margin: auto ;
 .footer-logo {
   margin-right: 120px;
 }
+
 .footer-second-logo {
   color: var(--light);
 }
@@ -402,6 +403,7 @@ margin: auto ;
 }
 .footer-social-list {
   gap: 16px;
+
 }
 .social-icon {
   fill: var(--light);
