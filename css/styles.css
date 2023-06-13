@@ -345,6 +345,11 @@ margin: auto ;
   color: var(--avctive);
   border-color: var(--avctive);
 }
+.customers-icon:hover,
+.customers-icon:focus {
+  color: var(--avctive);
+
+}
 .customers-icon {
   fill:currentColor;
 }
