@@ -304,6 +304,9 @@ margin: auto ;
   width: 40px;
   height: 40px;
 }
+.social-list {
+  gap: 24px;
+}
 
 .social-link {
   width: 100%;
@@ -383,9 +386,7 @@ margin: auto ;
   background-color: #31d0aa;
 
 }
-.customers-icon {
-  fill: var(--light);
-}
+
 .footer-text {
   color: var(--light);
   max-width: 264px;
@@ -400,9 +401,7 @@ margin: auto ;
   align-items: baseline;
   margin-left: 156px;
 }
-.social-list {
-  gap: 16px; 
-}
+
 .social-icon {
   fill: var(--light);
 }
