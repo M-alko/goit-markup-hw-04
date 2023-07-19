@@ -237,9 +237,6 @@ body {
 .advances-list-item {
   width: 264px;
 }
-.advances-icon-link {
-
-}
 .advances-icon-box {
   background-color: var(--light);
   width: 264px;
@@ -473,3 +470,21 @@ margin: auto ;
 .content-title {
   margin-bottom: 8px;
 }
+ /* MODAL */
+ .backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color:rgba(46, 47, 66, 0.4);
+ }
+ .modal {
+  width: 408px;
+  min-height: 584px;
+  background-color: var(--modal-background);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ }
