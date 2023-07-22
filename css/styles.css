@@ -488,3 +488,14 @@ margin: auto ;
   top: 50%;
   transform: translate(-50%, -50%);
  }
+ .modal-close {
+  border: none;
+  background: transparent;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+
+ }
