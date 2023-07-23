@@ -36,7 +36,7 @@
                 <section class="hero" >
                     <div class=" hero-box flex container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="btn-hero ">Order Service</button>
+                <button type="button" class="btn-hero" data-modal-open >Order Service</button>
             </div>
                 </section>
             <section class="advances section">
@@ -396,10 +396,10 @@
                 </div>
 
         </footer>
-        <div class="backdrop">
-            <div class="modal">
-                <button type="button" class="modal-close">
-                <svg class="modal-close">
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal " > 
+                <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-icon-close" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
                 </svg>
                 </button>
