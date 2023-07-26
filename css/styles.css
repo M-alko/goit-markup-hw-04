@@ -153,9 +153,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.adress {
-  margin-left: auto;
-}
+
 .adress-list {
   display: flex;
   gap: 40px;
@@ -183,6 +181,22 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.current {
+  position: relative;
+  color: var(--ocean);
+  } 
+  .current::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--avctive);
+      color: var(--avctive);
+      bottom: -1px;
+      left: 0;
+  
+  }
 /* Hero */
 .hero-title {
   text-align: center;
