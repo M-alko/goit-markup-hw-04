@@ -451,8 +451,8 @@ padding: 40px 32px;
   position: relative;
   overflow: hidden;
 }
-.box-image:hover .cover-text,
-.box-image:focus .cover-text{
+.cover-text:hover,
+.cover-text:focus {
   transform: translateY(0);
 }
 
