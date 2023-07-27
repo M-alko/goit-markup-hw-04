@@ -229,7 +229,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-background);
-  background-color: var(--primary-brand), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--primary-brand);
   cursor: pointer;
   margin-top: 48px;
   display: inline-block;
@@ -237,6 +237,9 @@ body {
   border-radius: 4px;
   border: 0;
   min-width: 169px;
+  transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-hero:hover,
 .btn-hero:focus {
@@ -297,7 +300,7 @@ margin: auto ;
 
 }
 .users-content-box {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
   width: 264px;
 }
@@ -328,6 +331,7 @@ margin: auto ;
   display:flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -354,6 +358,7 @@ margin: auto ;
   justify-content: center;
   align-items: center;
   color: var(--subtle-text);
+  transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus{
@@ -518,7 +523,8 @@ transition: transform 250ms;
   position: fixed;
   top: 0;
   background-color:rgba(46, 47, 66, 0.4);
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition:;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .modal {
   width: 408px;
@@ -529,7 +535,7 @@ transition: transform 250ms;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scaleX(1); 
-  transition: transform 300ms linear; 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .modal-close {
   display: flex;
@@ -545,11 +551,13 @@ transition: transform 250ms;
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .modal-close:hover,
  .modal-close:focus{
   background-color: var(--avctive);
   fill: var(--white-background);
+  border: none;
  }
  
 
@@ -561,4 +569,7 @@ transition: transform 250ms;
  }
  .backdrop.is-hidden .modal  {
   transform: translate(-500%, -500% );
+ }
+ .modal-icon-close{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
